@@ -1,25 +1,25 @@
 import logo from './logo.svg';
+import myImage from './jonny-gios-trVJHsxObUw-unsplash.jpg'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="relative bg-cover bg-center h-screen w-full" style={{ backgroundImage: `url(${myImage})`}}>
+      <div className="w-full absolute top-2/4 flex flex-col md:flex-row justify-center">
+          <div className="md:w-1/2 flex justify-center px-8">
+            <p className="text-lg text-white">Hello world!</p>
+        </div>
+        <div className="md:w-1/4 flex justify-center px-8">
+            <p className="text-lg text-white">Hello world!</p>
+        </div>
+        <div className="md:w-1/4 flex justify-center px-8">
+            <p className="text-lg text-white">Hello world!</p>
+        </div>
+      </div>
     </div>
-  );
+    </>
+  )
 }
 
 export default App;
